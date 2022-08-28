@@ -20,8 +20,8 @@ function enviar(){
         red.method = "";
     }
     else{
-        window.alert("Eviado! Aguarde o retorno.")
-    }
+        window.alert("Eviado! Aguarde o retorno.");
+}
 }
 
 
