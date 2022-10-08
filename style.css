@@ -153,7 +153,7 @@ header{
     color: white;
     background: none;
     cursor: pointer;
-}
+} 
 
 .botões-de-acesso:hover{
     background-color: white;
@@ -233,7 +233,6 @@ header{
 #experiência #cards .card  .item-card{
     padding: 20px;
     text-align: center;
-    
 }
 
 #experiência #cards .card .item-card h3{

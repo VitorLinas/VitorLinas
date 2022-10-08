@@ -4,139 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="icon" href="style/imgs/Logo.png">
-    <link rel="stylesheet" href="style/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-
-    <title>LINAS</title>
+    <link rel="icon" href="imagens/SloganPortfólio.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Vitor Linas</title>
 </head>
 <body>
-  <a href="#menu"><input type="image" src="style/imgs/seta.SVG" id="seta"></a>
-    <header id="menu">
-        <nav>
-            <a class="logo" href=""><img src="style/imgs/Logo.png" alt="logo"></a>
+    <header>
+        <div id="menu">
+            <img class="slogan" src="imagens/SloganPortfólio.png" alt="slogan" width="70px" >
+            
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="hamburger"><img src="imagens/iconHamburg.SVG"></label>
 
-            <input type="checkbox" id="checkbox"/>
-            <label for="checkbox" class="hamburger"><img src="style/imgs/iconHamburg.SVG"></label>
+            <ul class="ul-menu">
+                <li class="li-menu">
+                    <a href="#sobre-mim" class="a-menu"><nobr>SOBRE MIM</nobr></a>
+                </li>
 
-            <ul class="nav-list">
-              <li><a href="#" style="color: #cd3434;">HOME</a></li>
-              <li><a href="#sobre_mim"><nobr>SOBRE MIM</nobr></a></li>
-              <li><a href="#projetos">PROJETOS</a></li>
-              <li><a href="#sistema">SISTEMAS</a></li>
-              <li><a href="#contato">CONTATO</a></li>
+                <li class="li-menu">
+                    <a href="#experiência" class="a-menu">EXPERIÊNCIA</a>
+                </li>
+
+                <li class="li-menu">
+                    <a href="#projetos" class="a-menu">PROJETOS</a>
+                </li>
+
+                <li class="li-menu">
+                    <a href="#contato" class="a-menu">CONTATO</a>
+                </li>
             </ul>
-        </nav>
-      <h1 id="titulo">LINAS</h1>
-      <h2 id="subtitulo">DESENVOLVEDOR WEB</h2>
+        </div>
+
+        
+        <main id="principal">
+            <h1>VITOR LINAS / DESENVOLVEDOR WEB</h1>
+            <a href="https://www.linkedin.com/in/vitor-linas-113a151b5/"><input type="button" value="LINKEDIN" class="botões-de-acesso"></a>
+            <a href="https://github.com/VitorLinas"><input type="button" value="GITHUB" class="botões-de-acesso"></a>
+        </main>
     </header>
 
-    <main>
-      
-      <section id="sobre_mim">
-        <div id="texto">
-          <h1>Sobre mim</h1>
-           <p>Meu nome é Vitor Gabriel Linas, sou desenvolvedor web e faço websites para alavancar seu negócio
-           e converter clientes e acessos ao seu produto, utilizando HTML, CSS e JavaScript!</p>
+    <a href="#menu"><input type="image" src="imagens/seta.SVG" id="seta"></a>
+
+    <section id="sobre-mim">
+        <img src="imagens/Foto perfil Profissional.jpeg" alt="foto">
+        <div id="texto-SobreMim">
+            <h1>Sobre mim</h1>
+        <p>Meu nome e Vitor Linas, sou estudante de desenvolvimento web
+           e futuramente almejo me tornar um desenvolvedor full stack.</p>
+          <p> Sempre tive interesse para assuntos como criação de sites, jogos
+           e desenvolvimento de sistemas, mas foi só durante a pandemia que
+           conheci a programação e comecei a focar nos estudos para aprender
+           e me aperfeiçoar.</p>
+        <p>Contagem, MG</p>
         </div>
-      
-        <figure>
-          <img src="style/imgs/minhafoto.png" alt="minha foto">
-        </figure>
-      </section>
-      
-
-      <section id="projetos">
-        <h1>Projetos</h1>
-
-        <section  class="container_projetos">
-          <img src="M (1).png">
-          <div class="sobreposicao">
-            <p>Academia Dynamic</p>
-            <button><a href="https://vitorlinas.github.io/Academia_Dynamic/">Visitar</a></button>
-          </div>
-        </section>
-
-        <section  class="container_projetos">
-          <img src="M (2).png">
-          <div class="sobreposicao">
-            <p>Hamburgueria Good Meat</p>
-            <button><a href="https://vitorlinas.github.io/Hamburgueria_GoodMeat/">Visitar</a></button>
-          </div>
-        </section>
-
-        <section  class="container_projetos">
-          <img src="M3.png">
-          <div class="sobreposicao">
-            <p>Dr. Marcelo Ferraz</p>
-            <button><a href="https://vitorlinas.github.io/Website-Advogado/">Visitar</a></button>
-          </div>
-        </section>
+    </section>
 
 
-        <section   class="container_projetos  projetosBottom">
-          <img src="M.png" >
-          <div class="sobreposicao">
-            <p>MA arquitetura</p>
-            <button><a href="https://vitorlinas.github.io/MA_arquitetura/">Visitar</a></button>
-          </div>
-        </section>
+    <section id="experiência">
+        <h1>Experiência</h1>
+        <div id="cards">
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon js.svg" alt="icone javascript" width="100px">
+                    <h3>JavaScript</h3>
+                    <p>O Javascript é uma linguagem de programação responsável pela parte lógica e interativa de um site ou página.</p>
+                </div>
+            </div>
 
-      </section>
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon html.svg" alt="icone html" width="100px">
+                    <h3>HTML</h3>
+                    <p>O HTML é uma lingagem de marcação, ele é responsável pela estrutura do site.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon css.svg" alt="icone css" width="100px">
+                    <h3>CSS</h3>
+                    <p>O CSS é uma linguagem de estilização, ele é responsável pelo estilo e toda estética do site.</p>
+                </div>
+            </div>
+    </div>
+    </section>
 
 
-      <section id="sistema">
-        <h1>Sistemas</h1>
-
-        <section  class="container_projetos">
-          <img src="style/imgs/EM BREVE.png" >
-          <div class="sobreposicao">
-            <p>Descrição do projeto</p>
-            <button><a href="">Visitar</a></button>
-          </div>
-        </section>
-
-        <section  class="container_projetos  projetosBottom">
-          <img src="style/imgs/EM BREVE.png">
-          <div class="sobreposicao">
-            <p>Descrição do projeto</p>
-            <button><a href="">Visitar</a></button>
-          </div>
-        </section>
+        <script type="text/javascript" src="scripts/efeitoCard.js"></script>
+        
     
-      </section>
+    <section id="projetos">
+        <h1>Projetos</h1>
+        <div>
+          <ul  class="colunaDeProjetos">
+            <li>
+                <a href="https://vitorlinas.github.io/Projeto-PesquePagueDoZeVenancio/"><img src="imagens/pesquepague.png" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Projeto-PesquePagueDoZeVenancio/"><h2>Pesque e pague do zé venâncio</h2></a>
+            </li>
 
+            <li>
+                <a href="https://vitorlinas.github.io/Churrascometro/"><img src="imagens/churrascometro.jpg" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Churrascometro/"><h2>Churrascômetro</h2></a>
+            </li> 
 
-    <form action="" id="contato">
-      <div class="animate_border"></div>
-      <div id="formulario">
-        <h1>Entre em contato, vamos trabalhar juntos!</h1>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="E-mail">
-       
-        <textarea  name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-        <button>Enviar</button>
-      </div>
-    </form>
+            <li>
+                <a href="https://vitorlinas.github.io/Clone_do_Twitter/"><img src="imagens/Twitter.jpg" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Clone_do_Twitter/"><h2>Clone do Twitter</h2></a>
+            </li>
+          </ul>
+
+          <ul  class="colunaDeProjetos colunaDeProjetos2">
+            <li>
+                <a href="https://vitorlinas.github.io/GatherMoney/"><img src="imagens/GatherMoney.png" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/GatherMoney/"><h2>Gather Money</h2></a>
+            </li>
+
+            <li>
+                <a href="https://vitorlinas.github.io/Jogo_da_velha/"><img src="imagens/JogoDaVelha.png" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Jogo_da_velha/"><h2>Jogo da velha</h2></a>
+            </li> 
+
+            <li>
+                <a href="https://vitorlinas.github.io/Jogo_da_Memoria/"><img src="imagens/JogoDaMemoria.png" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Jogo_da_Memoria/"><h2>Jogo da memória</h2></a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="red">
+            <h1>Entre em contato comigo:</h1>
+            <input type="hidden" name="accessKey" value="a8f4d546-9029-4cb8-b8b0-200be9f9b885" id="envio">
+            <input type="hidden" name="redirectTo" value="https://vitorlinas.github.io/VitorLinas/" > 
+            <input type="text" placeholder="Nome" name="name" id="name">
+            <input type="text" placeholder="Email" name="email" id="email">
+            <input type="text" placeholder="Mensagem" name="message" id="message">
+            <button onclick="enviar()">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-      <div id="imagens_footer">
-        <a href=""><img src="style/imgs/iconeGmail.png" alt="gmail"></a>
-        <a href=""><img src="style/imgs/iconeInstagram.svg" alt="instagram"></a>
-        <a href=""><img src="style/imgs/iconeLinkedin.png" alt="linkedin"></a>
-    </div>
-    <p>Copyright © 2022 - Linas</p><br>
+        <hr>
+        <h4><img src="imagens/iconEmail.SVG"> vitorlinas.dev@gmail.com</h4>
+        <h4><b>Desenvolvido por: </b>Vitor Gabriel Linas</h4>
     </footer>
-    </main>
- 
+
+    <script src="scripts/script.js"></script>
+      
 </body>
-<script src="script/script.js"></script>
-</html>
+</html> 
+
